@@ -14,3 +14,25 @@ function likes(names) {
      return names[0] + ', ' + names[1]  + ' and ' + (names.length -2) + ' others like this'
     }
   }
+
+  const isSquare = function(n){
+    const digits = (""+n).split("");
+    const lastDigit = digits[digits.length-1]
+    const lastTwoDigits = digits[digits.length-1] + digits[digits.length-2]
+    
+      if (n < 0){
+        return false
+      } 
+      else if (n === 0 || n === 1 || n === 4 || n === 9 || n === 16 || n === 25 || n === 36 || n === 49 || n === 64 || n == 81){
+        return true //could refator here
+      } 
+      else if (n > 99)
+      if (lastDigit === '1' || lastDigit === '4' || lastDigit === '5' || lastDigit === '6' || lastDigit === '9' || lastTwoDigits === '00'){
+        return true
+      } else {
+        return false
+      }
+      else {
+        return false 
+      }
+    }
