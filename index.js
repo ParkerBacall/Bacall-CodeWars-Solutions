@@ -36,3 +36,22 @@ function likes(names) {
         return false 
       }
     }
+
+    // var isSquare = function(n){
+    //   for (var x = 0; x <= n; x++) {
+    //     if (n === 0) {
+    //       return true;
+    //     } else if (n / x === x) {
+    //       return true;
+    //     }
+    //   }
+      
+    //   return false;
+    // }
+
+    // Ones and zeors Binary array to numbers
+    const binaryArrayToNumber = arr => {
+      const binary = arr.join('')
+      const value = parseInt(binary, 2)// 2 tells parseInt to return Binary Value
+      return value
+    };
