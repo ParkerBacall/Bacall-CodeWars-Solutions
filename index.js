@@ -55,3 +55,14 @@ function likes(names) {
       const value = parseInt(binary, 2)// 2 tells parseInt to return Binary Value
       return value
     };
+
+    //list filtering
+    function filter_list(l) {
+      const noStrings = []
+      for (let i = 0; i < l.length; i++){
+        if (Number.isInteger(l[i])){
+          noStrings.push(l[i])
+        }
+      }
+      return noStrings
+    }
