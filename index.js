@@ -66,3 +66,8 @@ function likes(names) {
       }
       return noStrings
     }
+
+    //Find the odd Int
+    function findOdd(A){
+      return A.find((item, index) => A.filter(el => el == item).length % 2)
+    } //finds an item in the array based on wether the element remains in an array that is filtered of all items whos count is divisible by 2
