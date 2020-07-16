@@ -71,3 +71,16 @@ function likes(names) {
     function findOdd(A){
       return A.find((item, index) => A.filter(el => el == item).length % 2)
     } //finds an item in the array based on wether the element remains in an array that is filtered of all items whos count is divisible by 2
+
+
+//returns a sorted uniq string made from the combination of two strings
+    function longest(s1, s2) {
+      const combinedString = s1 + s2;
+      const arrayFromString = combinedString.split("");
+      const sortedArray = arrayFromString.sort()
+      const sortedUniqArray = sortedArray.filter((element, index, array) =>{
+          return element != array[index+1]
+      })
+      const result = sortedUniqArray.join("")
+      return result
+    }
