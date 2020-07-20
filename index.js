@@ -84,3 +84,14 @@ function likes(names) {
       const result = sortedUniqArray.join("")
       return result
     }
+
+
+// return integer sorted to be highest num possible
+  function descendingOrder(n){
+    let array = n.toString().split("")
+    let sortedArray = array.sort().reverse()
+    let sortedString = sortedArray.join("")
+    let sortedInt = parseInt(sortedString)
+    
+    return sortedInt
+}
