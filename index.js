@@ -95,3 +95,14 @@ function likes(names) {
     
     return sortedInt
 }
+
+//count the vowls in a string
+function getCount(str) {
+  var vowelsCount = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  const stringArray = str.split("")
+  for (let i=0; i<stringArray.length; i++){
+    if(vowels.includes(stringArray[i])){
+      vowelsCount++
+    }
+  }
