@@ -96,7 +96,7 @@ function likes(names) {
     return sortedInt
 }
 
-//count the vowls in a string
+//count the vowels in a string
 function getCount(str) {
   var vowelsCount = 0;
   const vowels = ['a', 'e', 'i', 'o', 'u']
@@ -105,4 +105,15 @@ function getCount(str) {
     if(vowels.includes(stringArray[i])){
       vowelsCount++
     }
+  }
+}
+//square each number in a string
+  function squareDigits(num){
+    const array = num.toString().split("")
+    const squaredArray = []
+    
+    array.forEach(number => {
+      squaredArray.push(parseInt(number) * parseInt(number))
+    })
+    return parseInt(squaredArray.join(""))
   }
